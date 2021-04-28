@@ -12,7 +12,8 @@ body {
 
 /* ?? Container */
 
-.container {
+.container,
+.container-questions {
     width: 300px;
     text-align: center;
     margin: 30px auto;
@@ -20,8 +21,12 @@ body {
     border-radius: 10px;
 }
 
+.container-questions {
+    width: 40%;
+}
 
-.container h1 {
+.container h1,
+.container-questions h1 {
     display: block;
     font-weight: bold;
     padding-top: 10px;
@@ -256,7 +261,7 @@ body {
     outline: 0;
     padding: 5px;
     color: #fff;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .questionGroup .textAns,

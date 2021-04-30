@@ -16,45 +16,52 @@
                 <label class="checkAnswer">Honorably discharge
                     <input type="radio" name="honorably" checked="checked">
                     <span class="checkmark"></span>
-                </>
+                </label>
                 <label class="checkAnswer">Dishonorably discharge
                     <input type="radio" name="disonorably">
                     <span class="checkmark"></span>
                 </label>
+                <input type="submit" class="continue" value="Next">
             </section>
-            <section class="questionGroup">
+            <section class="questionGroup hide">
                 <h2>Please provide the amount of retirement monthly payments that you will receive. (USD)</h2>
                 <span id="charD">$</span>
                 <input type="number" name="amount" id="amount">
+                <input type="submit" class="continue" value="Next">
             </section>
-            <section class="questionGroup">
+            <section class="questionGroup hide">
                 <h2>Would you like to be near a Veterans Affairs location?</h2>
                 <label class="checkAnswer">Yes
                     <input type="radio" name="honorably" checked="checked">
                     <span class="checkmark"></span>
-                </>
+                </label>
                 <label class="checkAnswer">No
                     <input type="radio" name="disonorably">
                     <span class="checkmark"></span>
                 </label>
+                <input type="submit" class="continue" value="Next">
             </section>
-            <section class="questionGroup">
+            <section class="questionGroup hide">
                 <h2>What is the highest level of education that you have attended?</h2>
                 <input type="text" name="levelEdu" class="textAns">
+                <input type="submit" class="continue" value="Next">
             </section>
-            <section class="questionGroup">
+            <section class="questionGroup hide">
                 <h2>What is the industry of your career or speciality?</h2>
                 <input type="text" name="career" class="textAns">
+                <input type="submit" class="continue" value="Next">
             </section>
-            <section class="questionGroup">
+            <section class="questionGroup hide">
                 <h2>How many years have you been in your primary career?</h2>
                 <input type="number" name="yearsCareer" class="numberI">
+                <input type="submit" class="continue" value="Next">
             </section>
-            <section class="questionGroup">
+            <section class="questionGroup hide">
                 <h2>What is the highest job role achieved?</h2>
                 <input type="text" name="career" class="textAns">
+                <input type="submit" class="continue" value="Next">
             </section>
-            <section class="questionGroup">
+            <section class="questionGroup hide">
                 <h2>Are you married?</h2>
                 <label class="checkAnswer">Yes
                     <input type="radio" name="married_yes" checked="checked">
@@ -64,17 +71,19 @@
                     <input type="radio" name="married_no">
                     <span class="checkmark"></span>
                 </label>
+                <input type="submit" class="continue" value="Next">
             </section>
-            <section class="questionGroup">
+            <section class="questionGroup hide">
                 <h2>How many people are in your immediate family?</h2>
                 <input type="number" name="membersFamily" class="numberI">
+                <input type="submit" class="continue" value="Next">
             </section>
-            <section class="questionGroup">
+            <section class="questionGroup hide">
                 <h2>After you retire, how often would you like to work?</h2>
                 <label class="checkAnswer">Full-time
                     <input type="radio" name="full_time" checked="checked">
                     <span class="checkmark"></span>
-                </>
+                </label>
                 <label class="checkAnswer">Part-time
                     <input type="radio" name="part_time">
                     <span class="checkmark"></span>
@@ -83,8 +92,9 @@
                     <input type="radio" name="no_work">
                     <span class="checkmark"></span>
                 </label>
+                <input type="submit" class="continue" value="Next">
             </section>
-            <section class="questionGroup">
+            <section class="questionGroup hide">
                 <h2>What area of the US would you like to live?</h2>
                 <select name="selectPlace" id="slcPlace">
                     <option value="0">Choose</option>
@@ -92,28 +102,31 @@
                     <option value="2">Second option</option>
                     <option value="3">Third option</option>
                 </select>
+                <input type="submit" class="continue" value="Next">
             </section>
-            <section class="questionGroup">
+            <section class="questionGroup hide">
                 <h2>Do you want to be with your family?</h2>
                 <label class="checkAnswer">Yes
                     <input type="radio" name="family_yes" checked="checked">
                     <span class="checkmark"></span>
-                </>
+                </label>
                 <label class="checkAnswer">No
                     <input type="radio" name="family_no">
                     <span class="checkmark"></span>
                 </label>
+                <input type="submit" class="continue" value="Next">
             </section>
-            <section class="questionGroup">
+            <section class="questionGroup hide">
                 <h2>Please enter the cities your family currently resides</h2>
                 <input type="text" name="cities" class="textAns">
+                <input type="submit" class="continue" value="Next">
             </section>
-            <section class="questionGroup">
+            <section class="questionGroup hide">
                 <h2>What size city do you prefer?</h2>
                 <label class="checkAnswer">Small
                     <input type="radio" name="small_city" checked="checked">
                     <span class="checkmark"></span>
-                </>
+                </label>
                 <label class="checkAnswer">Medium
                     <input type="radio" name="medium_city">
                     <span class="checkmark"></span>
@@ -122,19 +135,23 @@
                     <input type="radio" name="large_city">
                     <span class="checkmark"></span>
                 </label>
+                <input type="submit" class="continue" value="Next">
             </section>
-            <section class="questionGroup">
+            <section class="questionGroup hide">
                 <h2>Do you want to buy or rent a home?</h2>
                 <label class="checkAnswer">Buy
                     <input type="radio" name="buy_home" checked="checked">
                     <span class="checkmark"></span>
-                </>
+                </label>
                 <label class="checkAnswer">Rent
                     <input type="radio" name="rent_home">
                     <span class="checkmark"></span>
                 </label>
+                <input type="submit" class="continue" value="Next">
             </section>
         </form>
     </div>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>

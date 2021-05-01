@@ -10,11 +10,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-#hide {
+.hide {
     display: none;
 }
 
-#show {
+.show {
     display: block;
 }
 
@@ -292,3 +292,14 @@ body {
 .questionGroup .numberI {
     width: 90%;
 }
+
+
+/* Results section */
+#results {
+    width: 95%;
+}
+
+#result p {
+    text-align: left;
+}
+

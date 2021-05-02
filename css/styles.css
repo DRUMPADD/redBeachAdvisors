@@ -183,8 +183,8 @@ body {
     transition: 0.2s;
 }
 
-#signUp,
-.continue {
+#signUp a {
+    text-decoration: none;
     background-color: #aa11aa;
     color: #fff;
 }

@@ -1,0 +1,8 @@
+Flask:
+https://patrickmcmichael.org/flask-google-login/
+https://soshace.com/email-support-with-flask/
+
+Django:
+https://www.youtube.com/watch?v=56w8p0goIfs
+https://django-allauth.readthedocs.io/en/latest/installation.html
+https://www.section.io/engineering-education/django-google-oauth/

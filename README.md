@@ -1,10 +1,10 @@
-### Instalar Flask
+### Install Flask
 ```
 pip install flask
 ```
 
 
-### Correr servidor
+### Run server
 ```
 python main.py
 ```

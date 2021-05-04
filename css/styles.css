@@ -302,3 +302,17 @@ body {
     text-align: left;
 }
 
+
+@media screen and (max-width: 768px) {
+    .container,
+    .container-questions {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .container,
+    .container-questions {
+        width: 90%;
+    }
+}

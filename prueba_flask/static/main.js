@@ -12,6 +12,10 @@ function showSlides(n) {
     let i;
     var btnContinue = document.getElementsByClassName('continue');
     var slides = document.getElementsByClassName('questionGroup');
+    let changeInf = document.getElementsByClassName('chInfo');
+    let btnFinish = document.getElementsByClassName('finish');
+    changeInf[0].style.display = "none";
+    btnFinish[0].style.display = "none";
     if (n > slides.length) {
         slideI = 1;
     }
@@ -28,6 +32,8 @@ function showSlides(n) {
 
     if(n == slides.length) {
         btnContinue[0].style.display = "none";
+        changeInf[0].style.display = "inline-block";
+        btnFinish[0].style.display = "inline-block";
     }
 }
 

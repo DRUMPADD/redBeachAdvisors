@@ -23,6 +23,7 @@ body {
 .container,
 .container-questions {
     width: 300px;
+    position: relative;
     text-align: center;
     margin: 30px auto;
     box-shadow: 5px 10px 30px 3px #888888;
@@ -176,9 +177,35 @@ body {
     cursor: pointer;
 }
 
-#signUp,
+.chInfo,
+.finish {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    border: 0;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 800;
+    white-space: pre-line;
+    cursor: pointer;
+}
+
+.finish {
+    top: 10px;
+    padding: 20px;
+}
+
 .continue {
-    background-color: #aa11aa;
+    display: block;
+    margin: 20px auto;
+}
+
+#signUp,
+.continue,
+.chInfo,
+.finish {
+    background-color: #2058cf;
     color: #fff;
     transition: 0.2s;
 }
@@ -302,16 +329,13 @@ body {
     text-align: left;
 }
 
+
 @media screen and (max-width: 768px) {
     .container,
     .container-questions {
         width: 90%;
     }
-}
-
-@media screen and (min-width: 650px) {
-    .container,
-    .container-questions {
-        width: 90%;
+    .questionGroup > h2 {
+        text-align: justify;
     }
 }

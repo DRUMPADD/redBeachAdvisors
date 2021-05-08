@@ -8,6 +8,11 @@
 var slideI = 1;
 showSlides(slideI);
 
+function repeat() {
+    let contQues = document.getElementsByClassName('container-questions');
+    contQues[0].style.animation = 'animar 1s normal';
+}
+
 function showSlides(n) {
     let i;
     var btnContinue = document.getElementsByClassName('continue');
@@ -29,6 +34,7 @@ function showSlides(n) {
     }
 
     slides[slideI - 1].style.display = "block";
+    
 
     if(n == slides.length) {
         btnContinue[0].style.display = "none";

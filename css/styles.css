@@ -41,6 +41,10 @@ body {
     padding-top: 10px;
 }
 
+.container-questions {
+    animation: animar 1s normal;
+}
+
 /* ?? Choose register way */
 
 #chooseRegWay {
@@ -229,6 +233,7 @@ body {
 .questionGroup {
     font-family: 'Poppins', sans-serif;
     margin: 10px;
+    transition: 0.3s all;
 }
 
 .questionGroup > h2 {
@@ -337,5 +342,16 @@ body {
     }
     .questionGroup > h2 {
         text-align: justify;
+    }
+}
+
+
+@keyframes animar{
+    50% {
+        padding: 20px;
+    }
+
+    100% {
+        padding: 0;
     }
 }

@@ -335,13 +335,33 @@ body {
 }
 
 
-@media screen and (max-width: 768px) {
+@media (max-width: 576px) {
     .container,
     .container-questions {
         width: 90%;
     }
+
+    .container-questions h1 {
+        font-size: 20px;
+    }
+
     .questionGroup > h2 {
+        font-size: 17px;
         text-align: justify;
+    }
+}
+
+@media (min-width: 1000px) {
+    .container,
+    .container-questions {
+        width: 90%;
+    }
+
+    .container-questions h1 {
+        font-size: 50px;
+    }
+    .questionGroup > h2 {
+        font-size: 17px;
     }
 }
 

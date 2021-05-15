@@ -18,3 +18,6 @@ def sign_up_page(request):
 
 def results_page(request):
     return render(request, 'results.html')
+
+def create_account_page(request):
+    return render(request, 'create_ac.html')

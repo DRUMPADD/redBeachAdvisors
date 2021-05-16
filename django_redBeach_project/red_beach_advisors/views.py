@@ -2,13 +2,13 @@ from django.shortcuts import redirect, render
 
 # Create your views here.
 def index(request):
-    return render(request, 'questions.html')
+    if request.method == 'POST':
+        return redirect('results')
+    else:
+        return render(request, 'questions.html')
 
 def register_page(request):
-    if request.method == 'POST':
-        return redirect('sign_up')
-    else:
-        return render(request, 'register.html')
+    return render(request, 'register.html')
 
 def sign_up_page(request):
     if request.method == 'POST':

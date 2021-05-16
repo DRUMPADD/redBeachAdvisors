@@ -12,10 +12,6 @@ python main.py
 
 <hr>
 
-### Run server 🚀
-```
-python main.py
-```
 
 ### Install Django🐍
 ```

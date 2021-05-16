@@ -28,7 +28,8 @@ python main.py
 pip install django
 ```
 ### Run server 🚀
+## Windows
 ```
-cd project_redBeachAdvisors
-python manage.py
+cd django_redBeach_project
+python manage.py runserver
 ```

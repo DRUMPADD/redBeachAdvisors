@@ -10,13 +10,7 @@ pip install flask
 python main.py
 ```
 
-
-
-### Install Flask 💻
-```
-pip install flask
-```
-
+<hr>
 
 ### Run server 🚀
 ```

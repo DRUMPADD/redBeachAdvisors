@@ -12,6 +12,7 @@
     <div class="container-questions">
         <h1>Questions (Answer correctly and completely)</h1>
         <form id="questionsForm">
+            {% csrf_token %}
             <section class="questionGroup">
                 <h2>Were you honorably or dishonorably discharged?</h2>
                 <label class="checkAnswer">Honorably discharge

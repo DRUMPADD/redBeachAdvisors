@@ -1,0 +1,39 @@
+/* ?? Results section */
+.results {
+    width: auto;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.results h1 {
+    text-align: justify;
+    font-size: 1.4rem;
+}
+
+.results p {
+    margin: 10px auto;
+    color: #fff;
+}
+
+.results p:nth-child(2),
+.results p:nth-child(3),
+.results p:nth-child(4),
+.results p:nth-child(5) {
+    background-color: #3374b1;
+    border: none;
+    font-size: 20px;
+    text-align: left;
+    padding: 20px 20px 20px 2px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.results p:hover {
+    background-color: rgb(33, 34, 37);
+    color: #fff;
+}
+
+.results p:active {
+    font-size: 30px;
+}

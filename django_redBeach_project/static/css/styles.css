@@ -328,17 +328,6 @@ body {
     width: 90%;
 }
 
-
-/* Results section */
-#results {
-    width: 95%;
-}
-
-#result p {
-    text-align: left;
-}
-
-
 @media (max-width: 576px) {
     .container,
     .container-questions {

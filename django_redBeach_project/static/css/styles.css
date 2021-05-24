@@ -330,7 +330,8 @@ body {
 
 @media (max-width: 576px) {
     .container,
-    .container-questions {
+    .container-questions,
+    .container-card {
         width: 90%;
     }
 
@@ -351,7 +352,7 @@ body {
     }
 
     .container-questions h1 {
-        font-size: 50px;
+        font-size: 20px;
     }
     .questionGroup > h2 {
         font-size: 17px;

@@ -32,6 +32,7 @@ body {
 .container-card .fas {
     display: flex;
     background-color: #475;
+    color: #fff;
     justify-content: center;
     align-items: center;
     font-size: 50px;

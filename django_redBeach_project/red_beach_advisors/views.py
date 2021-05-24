@@ -11,8 +11,16 @@ def register_page(request):
     return render(request, 'register.html')
 
 def sign_up_page(request):
+    
     if request.method == 'POST':
-        return redirect('/')
+        user_email = request.POST.get('emailUser')
+        user_pwd = request.POST.get('passwordUser')
+        user_name = request.POST.get('nameUser')
+        user_lastN = request.POST.get('lastNameUser')
+        user_sta = request.POST.get('state')
+        user_bth = request.POST.get('birthday')
+        print(f'{user_email}\n{user_pwd}\n{user_name}\n{user_lastN}\n{user_sta}\n{user_bth}')
+        return redirect('/create_account')
     else:
         return render(request, 'signUp.html')
 

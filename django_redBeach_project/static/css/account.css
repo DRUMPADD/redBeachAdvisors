@@ -117,10 +117,10 @@ body {
 }
 
 .container-card .login ul a i {
-    font-size: 25px;
+    font-size: 30px;
     margin: 10px auto;
     padding: 10px;
-    background-color: rgb(175, 196, 182);
+    background-color: rgb(204, 211, 206);
     border-radius: 50%;
     transition: .3s;
 }

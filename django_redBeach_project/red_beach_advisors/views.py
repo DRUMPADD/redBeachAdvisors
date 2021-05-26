@@ -28,4 +28,11 @@ def results_page(request):
     return render(request, 'results.html')
 
 def create_account_page(request):
-    return render(request, 'create_ac.html')
+    if request.method == 'POST':
+        email = request.POST.get('emailUser')
+        pwd = request.POST.get('pwdUser')
+
+        print(f'Email: {email}\nPassword: {pwd}')
+        return redirect('/')
+    else:
+        return render(request, 'create_ac.html')

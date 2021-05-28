@@ -1,5 +1,5 @@
 from django.shortcuts import redirect, render
-
+from .models import Register
 # Create your views here.
 def index(request):
     if request.method == 'POST':

@@ -12,7 +12,7 @@
     <div class="container">
         <!-- <img src="./img/person_logo.png" alt=""> -->
         <h1>Please register</h1>
-        <form id="registerForm" method="POST" action="sign_up">
+        <form id="registerForm" name="RegisterForm" method="POST" action="sign_up">
             {% csrf_token %}
             <div class="form-group field">
                 <input type="email" name="emailUser" class="form_field" placeholder="Email">

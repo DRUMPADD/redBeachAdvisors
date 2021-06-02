@@ -23,7 +23,7 @@
         <div class="line">or</div>
         <div class="login">
             <h1>Login</h1>
-            <form action="create_account" method="POST">
+            <form action="login" method="POST">
                 {% csrf_token %}
                 <input type="email" name="emailUser" placeholder="Email address">
                 <input type="password" name="pwdUser" placeholder="Password">

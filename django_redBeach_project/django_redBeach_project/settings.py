@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'red_beach_advisors',
+    'red_beach_advisors.apps.RedBeachAdvisorsConfig',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
@@ -132,3 +132,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+AUTH_USER_MODEL = 'red_beach_advisors.Register'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = 'create_account'

@@ -14,35 +14,38 @@
         <h1>Please register</h1>
         <form id="registerForm" name="RegisterForm" method="POST" action="sign_up">
             {% csrf_token %}
+            {% for field in form %}
             <div class="form-group field">
-                <input type="email" name="emailUser" class="form_field" placeholder="Email">
+                {{ field }}
             </div>
-            <div class="form-group field">
-                <input type="password" name="passwordUser" class="form_field" placeholder="Choose password">
-            </div>
-            <div class="form-group field">
-                <input type="password" name="confirmPass" class="form_field" placeholder="Repeat password">
-            </div>
-            <div class="form-group field">
-                <input type="text" name="nameUser" class="form_field" placeholder="First name">
-            </div>
-            <div class="form-group field">
-                <input type="text" name="lastNameUser" class="form_field" placeholder="Last name">
-            </div>
-            <div class="form-group field">
-                <input type="text" name="state" class="form_field" placeholder="State">
-            </div>
-            <div class="form-group field">
-                <input type="date" name="birthday" class="form_field" placeholder="Birthday">
-            </div>
-
-            <div id="termsCond_field">
-                <input type="checkbox" name="acceptTerms" id="">
+            {% endfor %}
+            <!-- <div id="termsCond_field">
+                <input type="checkbox" name="acceptTerm" id="acceptTerms">
                 <label for="acceptTerms">By proceeding you also agree to the Terms of Service and Privacy Policy</label>
-            </div>
-
+            </div> -->
             <button type="submit" class="signUp">Sign up</button>
         </form>
     </div>
 </body>
 </html>
+<!-- <div class="form-group field">
+    <input type="email" name="emailUser" class="form_field" placeholder="Email">
+</div>
+<div class="form-group field">
+    <input type="password" name="passwordUser" class="form_field" placeholder="Choose password">
+</div>
+<div class="form-group field">
+    <input type="password" name="confirmPass" class="form_field" placeholder="Repeat password">
+</div>
+<div class="form-group field">
+    <input type="text" name="nameUser" class="form_field" placeholder="First name">
+</div>
+<div class="form-group field">
+    <input type="text" name="lastNameUser" class="form_field" placeholder="Last name">
+</div>
+<div class="form-group field">
+    <input type="text" name="state" class="form_field" placeholder="State">
+</div>
+<div class="form-group field">
+    <input type="date" name="birthday" class="form_field" placeholder="Birthday">
+</div> -->

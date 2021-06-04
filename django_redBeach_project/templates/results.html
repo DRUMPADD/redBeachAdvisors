@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
+    {% if user.is_authenticated %}
     <div class="container">
         <!-- Aquí aparecen los resultados -->
         <div class="results">
@@ -21,9 +22,12 @@
             <p class="showResults">Result 4</p>
             
             <div style="text-align: center;">
-                <a href="{% url 'logout' %}" class="signUp" style="text-decoration:none;">Log out</a>
+                <a href="logout/" class="signUp" style="text-decoration:none;">Log out</a>
             </div>
         </div>
     </div>
+    {% else %}
+    <h1>You are not logged in</h1>
+    {% endif %}
 </body>
 </html>

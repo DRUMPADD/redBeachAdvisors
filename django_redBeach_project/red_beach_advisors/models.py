@@ -8,3 +8,5 @@ class Register(AbstractUser):
     l_name = models.CharField(max_length=100)
     state = models.CharField(max_length=100)
     birthday = models.DateField()
+    USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = []

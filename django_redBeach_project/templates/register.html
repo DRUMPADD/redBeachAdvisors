@@ -1,3 +1,4 @@
+{% load socialaccount %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,10 +21,10 @@
                 <a href=""><i class="fab fa-facebook"></i><span>Facebook</span></a>
             </div>
             <div class="option">
-                <a href=""><i class="fab fa-google"></i><span>Gmail</span></a>
+                <a href="{% provider_login_url 'google' %}"><i class="fab fa-google"></i><span>Gmail</span></a>
             </div>
             <div class="option">
-                <a href=""><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+                <a href="{% provider_login_url 'linkedin_oauth2' %}"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
             </div>
         </div>
     </div>

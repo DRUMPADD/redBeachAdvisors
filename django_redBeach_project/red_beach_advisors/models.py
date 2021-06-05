@@ -9,4 +9,4 @@ class Register(AbstractUser):
     state = models.CharField(max_length=100)
     birthday = models.DateField()
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = []
+    REQUIRED_FIELDS = ['username']

@@ -10,3 +10,13 @@ class Register(AbstractUser):
     birthday = models.DateField()
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username']
+
+class Questions(models.Model):
+    id_question = models.IntegerField(primary_key=True)
+    txtquestion = models.CharField(max_length=255, null=False, blank=False)
+
+class Answers(models.Model):
+    id_answer = models.AutoField(primary_key=True)
+    txtanswer = models.CharField(max_length=255)
+    id_question = models.ForeignKey(Questions, on_delete=models.CASCADE)
+    email_register = models.ForeignKey(Register, on_delete=models.CASCADE, default='')

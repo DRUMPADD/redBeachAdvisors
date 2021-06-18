@@ -1,3 +1,5 @@
+{% load account %}
+{% load socialaccount %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,5 +31,8 @@
     {% else %}
     <h1>You are not logged in</h1>
     {% endif %}
+
+    <!-- {% get_social_accounts user as accounts %}
+    {{ accounts }} -->
 </body>
 </html>

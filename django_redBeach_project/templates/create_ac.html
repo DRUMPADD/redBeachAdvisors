@@ -1,4 +1,5 @@
 {% load socialaccount %}
+{% providers_media_js %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +32,7 @@
                 <input type="submit" value="Sign In">
             </form>
             <ul>
-                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href="{% provider_login_url 'facebook' method='js_sdk' %}"><i class="fab fa-facebook"></i></a>
                 <a href="{% provider_login_url 'google' %}"><i class="fab fa-google"></i></a>
                 <a href="{% provider_login_url 'linkedin_oauth2' %}"><i class="fab fa-linkedin"></i></a>
             </ul>

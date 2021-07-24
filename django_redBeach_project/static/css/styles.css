@@ -22,16 +22,18 @@ body {
 
 .container,
 .container-questions {
-    width: 300px;
+    width: 100px;
     position: relative;
     text-align: center;
     margin: 30px auto;
     box-shadow: 5px 10px 30px 3px #888888;
     border-radius: 10px;
+    min-width: 250px;
 }
 
 .container-questions {
     width: 40%;
+    padding: 20px;
 }
 
 .container h1,
@@ -41,8 +43,34 @@ body {
     padding-top: 10px;
 }
 
-.container-questions {
+/* .container-questions {
     animation: animar 1s normal;
+} */
+
+.questionGroup {
+    width: 100%;
+}
+
+.questionGroup label {
+    display: block;
+    margin: 2px auto;
+}
+
+.questionGroup input[type="radio"] {
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #555555;
+	border-radius: 50%;
+	background-clip: content-box;
+	padding: 3px;
+    float: left;
+    display: block;
+    margin: 2px auto;
+}
+
+.questionGroup input[type="radio"]:checked {
+	background-color: #555555;
 }
 
 /* ?? Choose register way */
@@ -229,14 +257,12 @@ body {
 
 /* ?? Questions form */
 #questionsForm {
-    padding: 10px;
     margin: 10px auto;
-    width: 90%;
+    width: 100%;
 }
 
 .questionGroup {
     font-family: 'Poppins', sans-serif;
-    margin: 10px;
     transition: 0.3s all;
 }
 
@@ -345,7 +371,7 @@ body {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 350px) {
     .container,
     .container-questions {
         width: 90%;
@@ -356,17 +382,6 @@ body {
     }
     .questionGroup > h2 {
         font-size: 17px;
-    }
-}
-
-
-@keyframes animar{
-    50% {
-        padding: 20px;
-    }
-
-    100% {
-        padding: 0;
     }
 }
 

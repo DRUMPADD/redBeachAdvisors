@@ -1,7 +1,8 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from .models import Register
-
+# Se crea la clase signUpForm para establecer los campos que contendrá el formulario para 
+# el registro del usuario, dentro se declara la clase Meta donde los campos llenarán los datos del modelo Register
 class signUpForm(UserCreationForm):
     email = forms.EmailField(max_length=200, widget=forms.EmailInput(attrs={
         'class': 'form_field',

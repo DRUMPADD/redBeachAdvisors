@@ -18,7 +18,7 @@ body {
     display: block;
 }
 
-/* ?? Container */
+/* Container */
 
 .container,
 .container-questions {
@@ -84,7 +84,7 @@ body {
 	background-color: #555555;
 }
 
-/* ?? Choose register way */
+/* Choose register way */
 
 #chooseRegWay {
     font-size: 1.2rem;
@@ -144,7 +144,7 @@ body {
     border: 8px solid #0e76a8;
 }
 
-/* ?? Form design */
+/* Form design */
 
 #registerForm {
     margin: 10px auto;
@@ -207,7 +207,7 @@ body {
     box-shadow: none;
 }
 
-/* ?? Button sign up */
+/* Button sign up */
 
 .signUp,
 .continue {
@@ -266,7 +266,8 @@ body {
     opacity: .5;
 }
 
-/* ?? Questions form */
+/* Questions form */
+
 #questionsForm {
     margin: 10px auto;
     width: 100%;
@@ -395,5 +396,3 @@ body {
         font-size: 17px;
     }
 }
-
-/* ?? Create account card */

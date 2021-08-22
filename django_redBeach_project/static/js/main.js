@@ -1,9 +1,4 @@
-// let i = 0;
-// while(i <= 14) {
-//     console.log(i * 100 / 14);
-//     i++;
-// }
-
+// Este código de hacer el efecto carousel al dar clic en el campo Siguiente en la página de las preguntas
 
 var slideI = 1;
 showSlides(slideI);

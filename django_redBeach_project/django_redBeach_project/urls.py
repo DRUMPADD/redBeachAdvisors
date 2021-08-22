@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path
 from django.urls.conf import include
 
+# Se utiliza la función include para incluir las urls contenidas en el archivo dentro del archivo de la aplicación, además
+# se incluye la libreria allauth y las urls que se utilizarán para la autenticación
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('red_beach_advisors.urls')),

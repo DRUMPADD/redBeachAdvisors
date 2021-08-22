@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+
+<!-- Se cargan los archivos estáticos para aplicar los estilos -->
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
@@ -14,6 +16,7 @@
         <h1>Please register</h1>
         <form id="registerForm" name="RegisterForm" method="POST" action="sign_up">
             {% csrf_token %}
+<!-- Con la sentencia for se incluyen los campos creados en el archivo forms -->
             {% for field in form %}
             <div class="form-group field">
                 {{ field }}
@@ -28,24 +31,3 @@
     </div>
 </body>
 </html>
-<!-- <div class="form-group field">
-    <input type="email" name="emailUser" class="form_field" placeholder="Email">
-</div>
-<div class="form-group field">
-    <input type="password" name="passwordUser" class="form_field" placeholder="Choose password">
-</div>
-<div class="form-group field">
-    <input type="password" name="confirmPass" class="form_field" placeholder="Repeat password">
-</div>
-<div class="form-group field">
-    <input type="text" name="nameUser" class="form_field" placeholder="First name">
-</div>
-<div class="form-group field">
-    <input type="text" name="lastNameUser" class="form_field" placeholder="Last name">
-</div>
-<div class="form-group field">
-    <input type="text" name="state" class="form_field" placeholder="State">
-</div>
-<div class="form-group field">
-    <input type="date" name="birthday" class="form_field" placeholder="Birthday">
-</div> -->

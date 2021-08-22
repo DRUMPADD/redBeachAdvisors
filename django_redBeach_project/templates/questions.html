@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veteran date</title>
+<!-- Se cargan los archivos estáticos para aplicar los estilos -->
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
+<!--Con la sentencia if checamos si el usuario está autenticado, de lo contrario se colocará un mensaje en la pantalla-->
     {% if user.is_authenticated %}
     <div class="container-questions">
         <h1>Questions (Answer correctly and completely)</h1>
@@ -153,6 +155,7 @@
             <button type="submit" class="finish">Finish</button>
         </form>
     </div>
+<!-- Se cargan los archivos estáticos para el efecto carousel con js -->
     <script src="{% static 'js/main.js' %}"></script>
     {% else %}
     <h1>You are not logged in</h1>

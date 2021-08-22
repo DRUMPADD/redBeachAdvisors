@@ -2,6 +2,8 @@ from django.urls import path
 from . import views
 from django.contrib.auth import views as view_auth
 
+# Se establecen las direcciones donde el usuario al acceder a alguna de ellas, será llevado a cierta página,
+# también se establecen las direcciones en caso de que el usuario inicie o cierre sesión
 urlpatterns = [
     path('home', views.index, name='home'),
     path('register_page', views.register_page, name='register'),

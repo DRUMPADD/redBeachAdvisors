@@ -1,3 +1,4 @@
+<!-- Se cargan las funciones para habilitar el inicio se sesión -->
 {% load account %}
 {% load socialaccount %}
 <!DOCTYPE html>
@@ -7,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Results</title>
+    
+<!-- Se cargan los archivos estáticos para aplicar los estilos -->
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <link rel="stylesheet" href="{% static 'css/results.css' %}">
@@ -31,8 +34,5 @@
     {% else %}
     <h1>You are not logged in</h1>
     {% endif %}
-
-    <!-- {% get_social_accounts user as accounts %}
-    {{ accounts }} -->
 </body>
 </html>

@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+# Importamos la libreria os para poder manejar los archivos html y los archivos estáticos
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -26,11 +27,14 @@ SECRET_KEY = 'o@102c7^&#6e@*7%z6+nc$vr=qb3pishw5a(a#fccl#z&14fpp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# Con el signo * permitimos que cualquier dirección sea válida para iniciar el servidor
 ALLOWED_HOSTS =['*']
 
 
 # Application definition
-
+# Se hacen varias llamadas, primero es la app red_beach_advisors importando RedBeachAdvisorsConfig desde el archivo apps
+#  Lo siguiente es importar allauth para poder lograr la autenticación con Google y LinkedIn, para esto se hacen varias
+# importaciones
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -59,7 +63,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'django_redBeach_project.urls'
-
+# Dentro del objeto DIRS se utiliza la libreria os para encontrar la carpeta donde están los archivos html contenidos en
+# la carpeta templates
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -82,6 +87,7 @@ WSGI_APPLICATION = 'django_redBeach_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# Configuramos las propiedades de los objetos para hacer la conexión con mysql
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -133,13 +139,17 @@ SITE_ID = 1
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+# Se establecen las direcciones sobre dónde se encuentran los archivos estáticos
 STATIC_URL = '/static/'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+# Se usa el modelo Register para identificar los campos que serán tomados en cuenta para el registro
 AUTH_USER_MODEL = 'red_beach_advisors.Register'
+# Se establece las direcciones hacia dónde será redireccionado el usuario una vez inicie o cierre sesión
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'create_account'
 
+# Se establecen los campos que se tomarán de cada una de las aplicaciones con las que el usuario decida registrarse
 SOCIALACCOUNT_PROVIDERS = {
     'facebook': {
         'METHOD': 'oauth2',

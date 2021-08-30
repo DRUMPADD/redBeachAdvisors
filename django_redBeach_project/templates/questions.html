@@ -19,20 +19,20 @@
             <section class="questionGroup">
                 <h2>Were you honorably or dishonorably discharged?</h2>
                 <div class="optionInput">
-                    <input type="radio" name="honorably" id="hono" value="Honorably discharge">
-                    <label class="checkAnswer" for="honorably">Honorably discharge
+                    <input type="radio" name="discharge_type" id="hono" value="Honorably discharge">
+                    <label class="checkAnswer" for="discharge_type">Honorably discharge
                     </label>
                 </div>
                 <div class="optionInput">
-                    <input type="radio" name="honorably" id="dis" value="Dishonorably discharge">
-                    <label class="checkAnswer" for="honorably">Dishonorably discharge
+                    <input type="radio" name="discharge_type" id="dis" value="Dishonorably discharge">
+                    <label class="checkAnswer" for="discharge_type">Dishonorably discharge
                     </label>
                 </div>
             </section>
             <section class="questionGroup">
                 <h2>Please provide the amount of retirement monthly payments that you will receive. (USD)</h2>
                 <span id="charD">$</span>
-                <input type="number" name="amount" id="amount">
+                <input type="number" name="amount_retire" id="amount_retire">
             </section>
             <section class="questionGroup">
                 <h2>Would you like to be near a Veterans Affairs location?</h2>
@@ -49,7 +49,7 @@
             </section>
             <section class="questionGroup">
                 <h2>What is the highest level of education that you have attended?</h2>
-                <input type="text" name="levelEdu" class="textAns">
+                <input type="text" name="level_education" class="textAns">
             </section>
             <section class="questionGroup">
                 <h2>What is the industry of your career or speciality?</h2>
@@ -57,11 +57,11 @@
             </section>
             <section class="questionGroup">
                 <h2>How many years have you been in your primary career?</h2>
-                <input type="number" name="yearsCareer" class="numberI">
+                <input type="number" name="years_career" class="numberI">
             </section>
             <section class="questionGroup">
                 <h2>What is the highest job role achieved?</h2>
-                <input type="text" name="career" class="textAns">
+                <input type="text" name="job_role" class="textAns">
             </section>
             <section class="questionGroup">
                 <h2>Are you married?</h2>
@@ -78,7 +78,7 @@
             </section>
             <section class="questionGroup">
                 <h2>How many people are in your immediate family?</h2>
-                <input type="number" name="membersFamily" class="numberI">
+                <input type="number" name="members_family" class="numberI">
             </section>
             <section class="questionGroup">
                 <h2>After you retire, how often would you like to work?</h2>
@@ -100,7 +100,7 @@
             </section>
             <section class="questionGroup">
                 <h2>What area of the US would you like to live?</h2>
-                <select name="selectPlace" id="slcPlace">
+                <select name="select_place" id="slcPlace">
                     <option value="0">Choose</option>
                     <option value="1">First option</option>
                     <option value="2">Second option</option>
@@ -140,12 +140,12 @@
             <section class="questionGroup">
                 <h2>Do you want to buy or rent a home?</h2>
                 <div class="optionInput">
-                    <input type="radio" name="buy" value="Buy">
-                    <label class="checkAnswer" for="buy">Buy</label>
+                    <input type="radio" name="buy_home" value="Buy">
+                    <label class="checkAnswer" for="buy_home">Buy</label>
                 </div>
                 <div class="optionInput">
-                    <input type="radio" name="buy" value="Rent">
-                    <label class="checkAnswer" for="buy">Rent</label>
+                    <input type="radio" name="buy_home" value="Rent">
+                    <label class="checkAnswer" for="buy_home">Rent</label>
                 </div>
             </section>
             <a class="continue" onclick="pushSlides(1)">Next</a>
